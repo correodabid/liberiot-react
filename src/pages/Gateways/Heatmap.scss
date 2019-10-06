@@ -1,0 +1,100 @@
+#activity {
+    width: 100%;
+    height: 3em;
+    margin-top: 2em;
+    display: flex;
+
+    div {
+        flex: 1 0 auto;
+
+        span {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .tick {
+            width: 100%;
+            height: 5px;
+            border-left: 1px solid grey;
+        }
+    }
+}
+
+.activity-info {
+    width: 100%;
+    display: inline-flex;
+
+    div {
+        flex: 1;
+        position: relative;
+        top: .2em;
+    }
+
+    .info-0 {
+        left: -0.3em
+    }
+
+    .info-15,
+    .info-30,
+    .info-45 {
+        left: -.7em
+    }
+}
+
+
+.activity-modal-hide-buttons {
+    .ant-modal-content {
+        .ant-modal-body {
+            .ant-modal-confirm-body-wrapper {
+                .ant-modal-confirm-btns {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.g2-tooltip {
+    position: absolute;
+    z-index: 8;
+    transition: visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1) 0s, left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgb(174, 174, 174) 0px 0px 10px;
+    border-radius: 3px;
+    color: rgb(87, 87, 87);
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    line-height: 20px;
+    padding: 1em;
+
+    .g2-tooltip-title {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        list-style-type: none;
+        margin-bottom: 4px;
+    }
+
+    .g2-tooltip-content {
+        padding: 1em;
+
+        .g2-tooltip-badge {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .g2-tooltip-value {
+            margin-left: 30px;
+            display: inline;
+        }
+    }
+
+    .g2-tooltip-footer {
+        font-weight: lighter;
+        font-stretch: expanded
+    }
+}

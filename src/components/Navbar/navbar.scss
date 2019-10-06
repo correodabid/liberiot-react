@@ -1,0 +1,26 @@
+.navbar {
+    height: 4.5vh;
+    background-color: rgba(250,250,250,0.6);
+}
+
+.logo {
+    font-family: 'Poiret One';
+    font-weight: 400;
+    font-size: 24px;
+    width: 70px;
+    height: 20px;
+    margin: 10px 0 0 10px;
+    float: left;
+    color: #737373 !important;
+    line-height: -moz-block-height;
+  }
+
+  @media all and (max-width: 800px) {
+    .navbar{
+        height: 7vh;
+        background-color: rgba(250,250,250,0.6);
+    }
+    .navbar .no-name {
+    display: none
+    }
+  }

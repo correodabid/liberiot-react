@@ -1,0 +1,151 @@
+#login {
+    background: #F7F7F7;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+.login_wrapper {
+    right: 0px;
+    margin: 0px auto; // margin-top: 5%;
+    max-width: 350px;
+    position: relative;
+    height: 100%;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.clearfix:after,
+form:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.login_content {
+  //  margin: 0 auto;
+    padding: 20% 5% 0; // position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+  //  min-width: 280px;
+    color: #73879C;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    a {
+        color: #73879C;
+        font-size: 12px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    form {
+        margin: 3vh 0;
+        position: relative;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            border-radius: 3px;
+            -ms-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+            -o-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+            box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+            border: 1px solid #c8c8c8;
+            color: #777;
+            // margin: 0 0 20px;
+            width: 100%;
+        }
+    }
+}
+
+.title h1 {
+    font: normal 36px 'Poiret One';
+    letter-spacing: -0.05em;
+    margin: 0;
+    color: #73879C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    b{
+        margin: 0 .2em;
+    }
+}
+
+.title h1:before,
+.title h1:after {
+    content: "";
+    height: 1px;
+    display: inline-flex;
+    width:100%;
+}
+
+.title h1:after {
+    background: #7e7e7e;
+    background: linear-gradient(to left, #7e7e7e 0%, white 100%);
+    right: 0;
+}
+
+.title h1:before {
+    background: #7e7e7e;
+    background: linear-gradient(to right, #7e7e7e 0%, white 100%);
+    left: 0;
+}
+
+.hide-effect {
+    h1:after,
+    h1:before {
+        display: none;
+    }
+}
+
+.separator {
+    border-top: 1px solid #D8D8D8;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.red-checkbox {
+    .ant-checkbox-checked {
+        .ant-checkbox-inner {
+            background-color: red;
+            border-color: red;
+        }
+    }
+    .ant-checkbox:hover {
+        .ant-checkbox-inner {
+            border-color: red;
+        }
+    }
+    .label {
+        display: inline;
+        font-weight: 100;
+        color: #73879C;
+        font-size: 12px;
+    }
+}
+
+.red-btn {
+    .ant-btn:hover,
+    .ant-btn:focus {
+        color: #333 !important;
+        background-color: #ebebeb !important;
+        border-color: #adadad !important;
+    }
+}
+
+.footer {
+    margin-top: auto; // bottom: 0;
+    font-size: 13px;
+}
+
+.red-icon {
+    color: #ff3333;
+}

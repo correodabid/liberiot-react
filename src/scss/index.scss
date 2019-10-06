@@ -1,0 +1,279 @@
+@import '~antd/dist/antd.css';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+html {
+    color: #73879C;
+    background: #f7f7f7;
+    font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.471;
+}
+
+.p0 {
+    padding: 0px;
+}
+
+.m0 {
+    margin: 0px;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.main-layout {
+    min-height: 100vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.link {
+    color: #1890ff;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    border: 0;
+}
+
+.link:hover,
+.link:focus {
+    color: #40a9ff;
+    // text-decoration: underline;
+}
+
+.link[disabled] {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.responsive-select {
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.clipboard {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .label {
+        flex: 1 0 auto;
+    }
+
+    .input {
+        flex: 0 100% auto;
+        margin: 0em 1em;
+        width: 100%;
+    }
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+// .ant-modal-body {
+//     min-height: 150px !important;
+//     padding: 15px !important;
+// }
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+    width: 100%;
+    max-width: 90%;
+    min-width: 20em;
+    padding: 0.2rem 0;
+    margin: 0.2rem auto 0;
+    background: #fff;
+
+    .menu {
+        max-height: 20rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        :hover {
+            border-color: rgba(0, 0, 0, 0.09);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+        }
+
+        .action {
+            margin: 0 0.2rem;
+            padding: 0.6rem 0.5rem;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 3rem;
+            cursor: pointer;
+
+            @media screen and (min-width: 768px) {
+                width: 10rem;
+                margin: 0.4rem;
+                padding: 0.6rem 0.5rem 1rem;
+                background-size: 3.6rem;
+                background-position: center 2.5rem;
+                border: 1px solid #e5e5e5;
+                font-size: 1.1rem;
+                font-weight: bold;
+                line-height: 1.2;
+                border-radius: 0.4rem;
+                white-space: nowrap;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .title {
+                box-shadow: none;
+                display: none;
+
+                @media screen and (min-width: 768px) {
+                    margin-bottom: .5rem;
+                    display: inline;
+                }
+            }
+
+            .icon {
+                box-shadow: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.edit-form {
+    margin: 0 auto;
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+        width: 90%
+    }
+}
+
+.gateways-responsive {
+    @media screen and (max-width: 768px) {
+        width: 80vw;
+    }
+}
+
+form.edit-responsive {
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.hide-on-desktop {
+    display: none;
+}
+
+.content-wrapper {
+    padding: 5vh 10vw 5vh 10vw;
+    top: 5vh;
+    position: relative
+}
+
+.details-organization-page {
+    padding: 2em;
+}
+
+.detail-card-link {
+    padding: 1em;
+}
+
+.ant-table-body {
+    overflow-x: auto;
+}
+
+.small-form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .hide-on-desktop {
+        display: inherit;
+    }
+
+    .content-wrapper {
+        padding: 5vh 2vw;
+    }
+
+    .details-organization-page {
+        padding: 0;
+    }
+
+    .detail-card-link {
+        padding: 0.5em;
+    }
+
+    .small-form {
+        width: 90%
+    }
+}
+
+.shadow-samples-list {
+    .ant-list-header {
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ant-form-item-label {
+            padding: 0;
+        }
+    }
+
+    .ant-spin-nested-loading {
+        .ant-spin-container {
+            padding: 1em;
+
+            .ant-list-items {
+                .ant-list-item {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.save-button {
+    background-color: #2da562;
+    color: white;
+
+    &:hover {
+        color: #2da562;
+        border-color: #2da562;
+    }
+}
